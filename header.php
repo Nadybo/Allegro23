@@ -11,15 +11,17 @@
             <img src="./images/logo.jpg" alt="logo">
         </a>
         <nav class="navbar-container">
-            <a class="navbar-items, active" href="#">Главная</a>
-            <a class="navbar-items" href="#">Заказы</a>
+            <a class="navbar-items" href="./index.php">Главная</a>
+            <a class="navbar-items" href="./oder.php">Заказы</a>
             <a class="navbar-items" href="#">Статистика</a>
-            <a class="navbar-items" href="#">Адресная книга</a>
+            <a class="navbar-items" href="./address-book.php">Адресная книга</a>
         </nav>
         <div>
-        <a class="oder-button" href="#">Сделать заказ</a>
+        <a class="oder-button" href="./oder.php">Сделать заказ</a>
         <a class="personal-account" href="./authorization.php">Личный кабинет</a>
         </div>
     </header>
+
+    <script src="./JS/main.js"></script>
 </body>
 </html>

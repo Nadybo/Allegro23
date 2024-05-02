@@ -39,12 +39,13 @@ header {
     padding: 5px;
     
     &:hover{
-    border-bottom: 2px solid #BA83FF;
-    padding: 5px;
+        color: var(--accent-color);
+    /* border-bottom: 2px solid #BA83FF;
+    padding: 5px; */
     }
 }
 
-header .active{
+.navbar-items[aria-current="page"]{
     text-decoration: none;
     color: var(--black-bg);
     margin: 0 30px 0 30px;
@@ -92,7 +93,7 @@ header .active{
     padding: 60px;
 
     margin: 130px auto; 
-    border-radius: 30px;
+    border-radius: 20px;
     justify-content: center; 
 }
 
@@ -165,7 +166,7 @@ header .active{
     padding: 60px;
 
     margin: 130px auto; 
-    border-radius: 30px;
+    border-radius: 20px;
     justify-content: center; 
 }
 
