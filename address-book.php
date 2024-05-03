@@ -13,8 +13,8 @@
     ?>
     <div class="address-book">
         <div class="search-items">
-                <input type="text">
-                <button><img src="./icons/search.svg" style=" width: 16px; aspect-ratio: 1;"  alt=""></button>
+                <input placeholder="Поиск" type="text">
+                <!-- <button><img src="./icons/search.svg" style=" width: 16px; aspect-ratio: 1;"  alt=""></button> -->
         </div>
         <table>
             <tr>

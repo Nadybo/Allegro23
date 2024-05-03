@@ -23,19 +23,19 @@
             </div>
         </div>
         <div class="info-container">
-            <label for="">
+            <label class="info-items" for="">
                 <p>Дата заказа</p>
                 <input type="date" name="" id="">
             </label>
-            <label for="">
+            <label class="info-items" for="">
                 <p>Время</p>
                 <input type="time" name="" id="">
             </label>
-            <label for="">
+            <label class="info-items" for="">
                 <p>Заказчик</p>
                 <input type="number" name="" id="">
             </label>
-            <label for="">
+            <label class="info-items" for="">
                 <p>Тариф</p>
                 <input type="number" name="" id="">
             </label>

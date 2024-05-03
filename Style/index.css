@@ -24,7 +24,7 @@ html { font-family: 'Inter', sans-serif; }
 body{
     margin: 25px 150px 0 150px;
 }
-@media (min-width: 300px) and (max-width: 860px) {
+@media (min-width: 300px) and (max-width: 1500px) {
 body{
     margin: 25px 30px 0 30px;
 }
@@ -55,6 +55,7 @@ header {
     width: 250px;
     height: 100%;
     background-color: #ffffff;
+    z-index: 10;
 
     display: flex;
     flex-direction: column;
@@ -265,6 +266,58 @@ header {
 
     border: 1px solid #23232380;
 }
+@media (min-width: 530px) and (max-width: 670px) {
+    .authorization,.registration {
+        width: 480px;
+        height: fit-content;
+        padding: 40px;
+    
+        margin: 130px auto; 
+        border-radius: 20px;
+    }
+    
+}
+@media (min-width: 300px) and (max-width: 530px) {
+    .authorization {
+        width: 300px;
+        height: fit-content;
+        padding: 20px;
+    
+        margin: 130px auto; 
+        border-radius: 20px;
+    }
+    .authorization, h1{
+        font-size: 24px;
+        margin-bottom: 32px;
+    }
+    .authorization .form-field{
+        height: 40px;
+    }
+    .registration-button,.create-account{
+        height: 40px;
+    } 
+    .authorization{
+        font-size: 12px;
+    }
+}
+@media (min-width: 300px) and (max-width: 530px) {
+    .registration{
+        font-size: 12px;
+        width: 300px;
+        height: fit-content;
+        padding: 20px;
+
+        margin: 130px auto; 
+        border-radius: 20px;
+    }
+    .registration h1{
+        font-size: 24px;
+        margin-bottom: 32px;
+    }
+    .registration .form-field{
+        height: 40px;
+    }
+}
 
 /* order*/
 .orders-conyainer{
@@ -278,7 +331,6 @@ header {
 .sort-container{
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 .sort-items{
     display: flex;
@@ -315,31 +367,46 @@ header {
 
 .search-items{
     display: flex;
+    position: relative;
+    display: inline-block;
+
+    margin-top: 20px;
 }
 
 .search-items input{
     width: 520px;
     height: 50px;
 
-    border-radius: 7px 0 0 7px;
+    border-radius: var(--border-normal-radius);
     border: .5px solid var(--border-color);
     padding: 0 0 0 23px;
 
     font-size: var(--font-normal-size);
 }
+@media (min-width: 300px) and (max-width: 580px) {
+    .search-items input{
+        width: 300px;
+    }
+}
 .search-items button{
     width: 50px;
     aspect-ratio: 1;
 
+    position: absolute;
+    top: 0;
+    right: 0;
     background-color: var(--accent-color);
-
     border: none;
-    border-radius: 0 7px 7px 0;
-
+    border-radius: var(--border-normal-radius);
     &:hover{
         background-color: var(--button-hover);
     }
     
+}
+@media (min-width: 300px) and (max-width: 1036px) {
+    .sort-container{
+        flex-direction: column;
+    }
 }
 
 table{
@@ -362,6 +429,20 @@ tr:nth-child(odd) {
   
   tr:nth-child(even) {
     background-color: white;
+}
+@media (min-width: 300px) and (max-width: 1150px) {
+    table{
+        margin-top: 25px;
+        text-align: center;
+    
+        font-size: 12px;
+    }
+    table th{
+        padding: 9px 0 9px 0;
+    }
+    table td{
+        padding: 13px 0 13px 0;
+    }
 }
 
 /*viewing an order*/
@@ -430,10 +511,22 @@ tr:nth-child(odd) {
 }
 .info-container{
     display: flex;
-    align-items: center;
     justify-content: space-between;
 
     margin-top: 20px;
+}
+@media (min-width: 600px) and (max-width: 1070px) {
+    .info-container{
+        flex-wrap: wrap;
+    }
+    .info-items{
+        width: 50%;
+    }
+}
+@media (min-width: 300px) and (max-width: 600px) {
+    .info-container{
+        flex-direction: column;
+    }
 }
 .blanks-items p{
     font-weight: bold;
@@ -471,7 +564,26 @@ tr:nth-child(odd) {
     padding: 10px;
     font-size: var(--font-normal-size);
 }
-
+@media (min-width: 300px) and (max-width: 930px) {
+   .blanks-container{
+    flex-direction: column;
+   }
+}
+@media (min-width: 300px) and (max-width: 460px) {
+    .blanks-items textarea{
+        width: 350px;
+    }
+    .blanks-items input{
+        width: 350px;
+    }
+    .control-buttons a{
+        padding: 10px;
+        margin-right: 10px;
+    }
+    .number-order button{
+        padding: 10px;
+    }
+}
 /*Сделать заказ*/
 .make-order-container{
     display: flex;

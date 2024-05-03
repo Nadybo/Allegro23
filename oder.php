@@ -25,8 +25,8 @@
                 <button class="sort-button">Фильтр <img src="./icons/sort.svg" style=" width: 16px; aspect-ratio: 1; margin-left: 5px;" alt=""></button>
             </div>
             <div class="search-items">
-                <input type="text">
-                <button><img src="./icons/search.svg" style=" width: 16px; aspect-ratio: 1;"  alt=""></button>
+                <input placeholder="Поиск" type="text">
+                <!-- <button><img src="./icons/search.svg" style=" width: 16px; aspect-ratio: 1;"  alt=""></button> -->
             </div>
         </div>
         <table>
