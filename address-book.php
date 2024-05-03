@@ -11,12 +11,50 @@
     <?php
         require_once 'header.php';
     ?>
-    <div>
-
+    <div class="address-book">
+        <div class="search-items">
+                <input type="text">
+                <button><img src="./icons/search.svg" style=" width: 16px; aspect-ratio: 1;"  alt=""></button>
+        </div>
+        <table>
+            <tr>
+                <th>Компания</th>
+                <th>Адрес</th>
+                <th>Проезд</th>
+                <th>Телефон</th>
+                <th>ФИО контакта</th>
+                <th>Изменить</th>
+                <th>Удалить</th>   
+            </tr>
+            <tr>
+                <td><a href="./viewing-an-order.php">ОП-2024-04-27-3369</a></td>
+                <td>2024-04-27</td>
+                <td>09:22:51</td>
+                <td>ФортеИнвест АО</td>
+                <td>ФортеИнвест АО</td>
+                <td><a href=""><img class="table-icon" src="./icons/pencil-edit.svg"></img></a></td>
+                <td><a href=""><img class="table-icon" src="./icons/trash-alt.svg"></img></a></td>
+            </tr>
+            <tr>
+                <td><a href="./viewing-an-order.php">ОП-2024-04-27-3369</a></td>
+                <td>2024-04-27</td>
+                <td>09:22:51</td>
+                <td>ФортеИнвест АО</td>
+                <td>ФортеИнвест АО</td>
+                <td><a href=""><img class="table-icon" src="./icons/pencil-edit.svg"></img></a></td>
+                <td><a href=""><img class="table-icon" src="./icons/trash-alt.svg"></img></a></td>
+            </tr>
+            <tr>
+                <td><a href="./viewing-an-order.php">ОП-2024-04-27-3369</a></td>
+                <td>2024-04-27</td>
+                <td>09:22:51</td>
+                <td>ФортеИнвест АО</td>
+                <td>ФортеИнвест АО</td>
+                <td><a href=""><img class="table-icon" src="./icons/pencil-edit.svg"></img></a></td>
+                <td><a href=""><img class="table-icon" src="./icons/trash-alt.svg"></img></a></td>
+            </tr>
+        </table>
     </div>
-    <?php
-        require_once 'footer.php';
-    ?>
     <script src="./JS/main.js"></script>
 </body>
 </html>

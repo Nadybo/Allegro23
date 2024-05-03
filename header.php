@@ -7,6 +7,15 @@
 </head>
 <body>
     <header>
+        <div class="sidebar-container">
+            <button id="menuButton"><img src="./icons/bars.svg" alt="Меню"></button>
+            <div id="sideMenu">
+            <a  href="./index.php">Главная</a>
+            <a  href="./oder.php">Заказы</a>
+            <a  href="#">Статистика</a>
+            <a  href="./address-book.php">Адресная книга</a>
+            </div>
+        </div>
         <a class="logo" href="index.php">
             <img src="./images/logo.jpg" alt="logo">
         </a>
@@ -16,9 +25,13 @@
             <a class="navbar-items" href="#">Статистика</a>
             <a class="navbar-items" href="./address-book.php">Адресная книга</a>
         </nav>
-        <div>
-        <a class="oder-button" href="./oder.php">Сделать заказ</a>
-        <a class="personal-account" href="./authorization.php">Личный кабинет</a>
+        <div class="buttons-container">
+        <a class="order-button" href="./make-an-order.php">Сделать заказ <img class="mini-icon" src="./icons/box.svg" alt="icon box"></a>
+        <a class="personal-account" href="./authorization.php">Личный кабинет <img class="mini-icon" src="./icons/user.svg" alt="icon user"></a>
+        </div>
+        <div class="icon-buttons-order">
+        <a class="order-button" href="./make-an-order.php"><img class="mini-icon" src="./icons/box.svg" alt="icon box"></a>
+        <a class="personal-account" href="./authorization.php"><img class="mini-icon" src="./icons/user.svg" alt="icon user"></a>
         </div>
     </header>
 

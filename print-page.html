@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<div>
+    <a class="exit-link" href="./viewing-an-order.php">Назад</a>
+    <button class="print-screen" onclick="window.print();">Печать</button>
+    <h2>Уведомление о вручении отправителя</h2>
+    <p>номер отслеживания: ОП-2024-04-01-3142</p>
+    <div class="data-container">
+            <label class="data-item" for="">
+                <p>Дата заказа</p>
+                <input type="text" name="" id="">
+            </label>
+            <label class="data-item" for="">
+                <p>Время</p>
+                <input type="text" name="" id="">
+            </label>
+            <label class="data-item" for="">
+                <p>Заказчик</p>
+                <input type="number" name="" id="">
+            </label>
+            <label class="data-item" for="">
+                <p>Тариф</p>
+                <input type="number" name="" id="">
+            </label>
+            <label class="data-item" for="">
+                <p>Вес отправления</p>
+                <input type="number" name="" id="">
+            </label>
+    </div>
+
+        <!-- Container 1 -->
+        <h3>Отправитель</h3>
+    <div class="form-container">
+        <div class="form-items">
+            
+            <label for="">
+                    <p>Организация</p>
+                    <input type="text">
+                </label>
+                <label for="">
+                    <p>Адрес</p>
+                    <input type="text">
+                </label>
+                <label for="">
+                    <p>Проезд</p>
+                    <input type="text">
+                </label>
+                <label for="">
+                    <p>Телефон</p>
+                    <input type="tel">
+                </label>
+                <label for="">
+                    <p>Задание курьеру</p>
+                    <textarea name="Сообщения" id="" cols="30" rows="10"></textarea>
+            </label>
+        </div>
+        <div class="form-items">
+        <label for="">
+                    <p>ФИО отправителя</p>
+                    <input type="text">
+                </label>
+                <label for="">
+                    <p>Подпись</p>
+                    <input type="text">
+                </label>
+                <label for="">
+                    <p>Вес отправления</p>
+                    <input type="text">
+                </label>
+                <P class="agreement">
+                    Своей подписью я подтверждаю,<br>
+                    что отправление не содержит предметы,<br>
+                    запрещенные к доставке на территории РФ,<br>
+                    отправление отправлено,<br>
+                    повреждения отсуствуют<br>
+                </P>
+                <div class="data-time">
+                    <label for="">
+                        <p>Дата</p>
+                        <input type="text">
+                    </label>
+                    <label for="">
+                        <p>Время</p>
+                        <input type="text">
+                    </label>
+                </div>
+        </div>
+    </div>
+
+    <!-- Container 2 -->
+    <h3>Получатель</h3>
+    <div class="form-container">
+    <div class="form-items">
+        
+            <label for="">
+                    <p>Организация</p>
+                    <input type="text">
+                </label>
+                <label for="">
+                    <p>Адрес</p>
+                    <input type="text">
+                </label>
+                <label for="">
+                    <p>Проезд</p>
+                    <input type="text">
+                </label>
+                <label for="">
+                    <p>Телефон</p>
+                    <input type="tel">
+                </label>
+                <label for="">
+                    <p>Задание курьеру</p>
+                    <textarea name="Сообщения" id="" cols="30" rows="10"></textarea>
+            </label>
+        </div>
+        <div class="form-items">
+        <label for="">
+                    <p>ФИО получателя</p>
+                    <input type="text">
+                </label>
+                <label for="">
+                    <p>Подпись</p>
+                    <input type="text">
+                </label>
+                <label for="">
+                    <p>Вес отправления</p>
+                    <input type="text">
+                </label>
+                <P class="agreement">
+                    Своей подписью я подтверждаю,<br>
+                    что отправление не содержит предметы,<br>
+                    запрещенные к доставке на территории РФ,<br>
+                    отправление отправлено,<br>
+                    повреждения отсуствуют<br>
+                </P>
+                <div class="data-time">
+                    <label for="">
+                        <p>Дата</p>
+                        <input type="text">
+                    </label>
+                    <label for="">
+                        <p>Время</p>
+                        <input type="text">
+                    </label>
+                </div>
+        </div>
+    </div>
+
+    <style>
+    *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+    body{
+        width: 700px;
+        height: fit-content;
+    }
+    .data-time input{
+        width:100px;
+    }
+    input{
+        width: 300px;
+        height: 20px;
+    }
+    .data-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }  
+    .data-item{
+       width: 50%; 
+       margin-top: 10px;
+    }
+    textarea{
+        width: 300px;
+    }
+    .form-container{
+        padding: 15px;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    h3{
+        margin-top: 20px;
+    }
+    .agreement{
+        margin-top: 10px;
+        font-size: 12px;
+    }
+    .data-time{
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .print-screen{
+        width: 100px;
+        height: 30px;
+        background-color: green;
+        color: white;
+        margin-bottom: 50px;
+        border: none;
+    }
+    .exit-link{
+        padding: 7px;
+        width: 100px;
+        height: 30px;
+        background-color: blue;
+        color: white;
+        text-decoration: none;
+    }
+    </style>
+    <style type="text/css" media="print">
+        button {display: none; }
+        .exit-link {display: none;}
+    </style>
+</div> 
+</body>
+</html>

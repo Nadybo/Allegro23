@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./Style/index.css" media="screen" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
-    <title>Alegro23</title>
+    <title>Home</title>
 </head>
 <body>
     <?php
@@ -14,9 +14,6 @@
     <div>
 
     </div>
-    <?php
-        require_once 'footer.php';
-    ?>
     <script src="./JS/main.js"></script>
 </body>
 </html>
