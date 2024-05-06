@@ -11,6 +11,7 @@
     <?php
         require_once 'header.php';
     ?>
+    <div class="other-body">
     <div class="make-order-container">
         <div class="title-container">
             <h1>Оформление доставки</h1>
@@ -94,7 +95,7 @@
                 <label  for="">
                     <div class="input-with-button">
                     <input class="data-area" placeholder="Организация" type="text">
-                    <a href="./address-book.php">Адресная книга</a>
+                    <a id="openModalBtn1">Адресная книга</a>
                 </div>
                 </label>
                 <label for="">
@@ -120,7 +121,7 @@
                 <label  for="">
                     <div class="input-with-button">
                     <input class="data-area" placeholder="Организация" type="text">
-                    <a href="./address-book.php">Адресная книга</a>
+                    <a id="openModalBtn">Адресная книга</a>
                 </div>
                 </label>
                 <label for="">
@@ -143,6 +144,112 @@
                 <button>Сделать заказ</button>
             </div>
         </div>
+    </div>
+      <!-- Контент модального окна -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="search-items">
+                <h2>Адресная книга</h2>
+                <input placeholder="Поиск" type="text">
+                <!-- <button><img src="./icons/search.svg" style=" width: 16px; aspect-ratio: 1;"  alt=""></button> -->
+        </div>
+    <div class="modal-table-container">
+    <table>
+            <tr>
+                <th>Компания</th>
+                <th>Адрес</th>
+                <th>Проезд</th>
+                <th>Телефон</th>
+                <th>ФИО контакта</th>
+                <th>Изменить</th>
+                <th>Удалить</th>   
+            </tr>
+            <tr>
+                <td>ОП-2024-04-27-3369</td>
+                <td>2024-04-27</td>
+                <td>09:22:51</td>
+                <td>ФортеИнвест АО</td>
+                <td>ФортеИнвест АО</td>
+                <td><a href=""><img class="table-icon" src="./icons/pencil-edit.svg"></img></a></td>
+                <td><a href=""><img class="table-icon" src="./icons/trash-alt.svg"></img></a></td>
+            </tr>
+            <tr>
+                <td>ОП-2024-04-27-3369</td>
+                <td>2024-04-27</td>
+                <td>09:22:51</td>
+                <td>ФортеИнвест АО</td>
+                <td>ФортеИнвест АО</td>
+                <td><a href=""><img class="table-icon" src="./icons/pencil-edit.svg"></img></a></td>
+                <td><a href=""><img class="table-icon" src="./icons/trash-alt.svg"></img></a></td>
+            </tr>
+            <tr>
+                <td>ОП-2024-04-27-3369</td>
+                <td>2024-04-27</td>
+                <td>09:22:51</td>
+                <td>ФортеИнвест АО</td>
+                <td>ФортеИнвест АО</td>
+                <td><a href=""><img class="table-icon" src="./icons/pencil-edit.svg"></img></a></td>
+                <td><a href=""><img class="table-icon" src="./icons/trash-alt.svg"></img></a></td>
+            </tr>
+            <tr>
+                <td>ОП-2024-04-27-3369</td>
+                <td>2024-04-27</td>
+                <td>09:22:51</td>
+                <td>ФортеИнвест АО</td>
+                <td>ФортеИнвест АО</td>
+                <td><a href=""><img class="table-icon" src="./icons/pencil-edit.svg"></img></a></td>
+                <td><a href=""><img class="table-icon" src="./icons/trash-alt.svg"></img></a></td>
+            </tr>
+            <tr>
+                <td>ОП-2024-04-27-3369</td>
+                <td>2024-04-27</td>
+                <td>09:22:51</td>
+                <td>ФортеИнвест АО</td>
+                <td>ФортеИнвест АО</td>
+                <td><a href=""><img class="table-icon" src="./icons/pencil-edit.svg"></img></a></td>
+                <td><a href=""><img class="table-icon" src="./icons/trash-alt.svg"></img></a></td>
+            </tr>
+            <tr>
+                <td>ОП-2024-04-27-3369</td>
+                <td>2024-04-27</td>
+                <td>09:22:51</td>
+                <td>ФортеИнвест АО</td>
+                <td>ФортеИнвест АО</td>
+                <td><a href=""><img class="table-icon" src="./icons/pencil-edit.svg"></img></a></td>
+                <td><a href=""><img class="table-icon" src="./icons/trash-alt.svg"></img></a></td>
+            </tr>
+            <tr>
+                <td>ОП-2024-04-27-3369</td>
+                <td>2024-04-27</td>
+                <td>09:22:51</td>
+                <td>ФортеИнвест АО</td>
+                <td>ФортеИнвест АО</td>
+                <td><a href=""><img class="table-icon" src="./icons/pencil-edit.svg"></img></a></td>
+                <td><a href=""><img class="table-icon" src="./icons/trash-alt.svg"></img></a></td>
+            </tr>
+            <tr>
+                <td>ОП-2024-04-27-3369</td>
+                <td>2024-04-27</td>
+                <td>09:22:51</td>
+                <td>ФортеИнвест АО</td>
+                <td>ФортеИнвест АО</td>
+                <td><a href=""><img class="table-icon" src="./icons/pencil-edit.svg"></img></a></td>
+                <td><a href=""><img class="table-icon" src="./icons/trash-alt.svg"></img></a></td>
+            </tr>
+            <tr>
+                <td>ОП-2024-04-27-3369</td>
+                <td>2024-04-27</td>
+                <td>09:22:51</td>
+                <td>ФортеИнвест АО</td>
+                <td>ФортеИнвест АО</td>
+                <td><a href=""><img class="table-icon" src="./icons/pencil-edit.svg"></img></a></td>
+                <td><a href=""><img class="table-icon" src="./icons/trash-alt.svg"></img></a></td>
+            </tr>
+        </table>
+    </div>
+  </div>
+</div>
     </div>
     <script src="./JS/main.js"></script>
 </body>

@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="./Style/index.css" media="screen" />
 </head>
 <body>
+    <div class="other-body">
     <header>
         <div class="sidebar-container">
             <button id="menuButton"><img src="./icons/bars.svg" alt="Меню"></button>
@@ -34,6 +35,8 @@
         <a class="personal-account" href="./authorization.php"><img class="mini-icon" src="./icons/user.svg" alt="icon user"></a>
         </div>
     </header>
+    </div>
+    
 
     <script src="./JS/main.js"></script>
 </body>

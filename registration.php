@@ -10,6 +10,7 @@
     <?php
         require_once 'header.php';
     ?>
+    <div class="other-body">
     <form class="registration">
         <h1>Регистрация</h1>
         <input class="form-field" placeholder="Организация" type="text">
@@ -26,6 +27,7 @@
         <button class="registration-button" type="submit">Создать аккаунт</button>
         <p>Уже есть аккаунт?<a href="./authorization.php"> Авторизация</a></p>
     </form>
+    </div>
     <script src="./JS/main.js"></script>
 </body>
 </html>

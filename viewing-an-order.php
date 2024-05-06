@@ -8,6 +8,7 @@
     <title>Alegro23</title>
 </head>
 <body>
+    <div class="other-body">
     <div class="view-oder">
         <div class="control-buttons">
             <a href="./oder.php">Вернуться к заказам</a>
@@ -18,7 +19,7 @@
                 <p><b>Заказ:</b>343434</p>
             </label>
             <div>
-                <button class="edit-button">Изменить</button>
+                <button class="edit-button">Удалить</button>
                 <button class="save-button">Сохранить</button>
             </div>
         </div>
@@ -33,15 +34,18 @@
             </label>
             <label class="info-items" for="">
                 <p>Заказчик</p>
-                <input type="number" name="" id="">
+                <input type="text" name="" id="">
             </label>
             <label class="info-items" for="">
                 <p>Тариф</p>
-                <input type="number" name="" id="">
+                <select>
+                    <option>Пункт 1</option>
+                    <option>Пункт 2</option>
+                </select>
             </label>
         </div>
         <div class="blanks-container">
-            <div class="blanks-items">
+            <form class="blanks-items">
                 <h2>Отправитель</h2>
                 <label for="">
                     <p>Организация</p>
@@ -63,8 +67,8 @@
                     <p>Задание курьеру</p>
                     <textarea name="Сообщения" id="" cols="30" rows="10"></textarea>
                 </label>
-            </div>
-            <div class="blanks-items">
+            </form>
+            <form class="blanks-items">
                 <h2>Информация о вручении</h2>
                 <label for="">
                     <p>ФИО отправителя</p>
@@ -86,8 +90,8 @@
                     <p>Дата и время</p>
                     <input type="date">
                 </label>
-            </div>
-            <div class="blanks-items">
+            </form>
+            <form class="blanks-items">
                 <h2>Отправитель-получатель</h2>
                 <label for="">
                     <p>Организация</p>
@@ -109,8 +113,8 @@
                     <p>Задание курьеру</p>
                     <textarea name="Сообщения" id="" cols="30" rows="10"></textarea>
                 </label>
-            </div>
-            <div class="blanks-items">
+            </form>
+            <form class="blanks-items">
                 <h2>Информация о вручении</h2>
                 <label for="">
                     <p>ФИО отправителя</p>
@@ -132,7 +136,7 @@
                     <p>Дата и время</p>
                     <input type="date">
                 </label>
-            </div>
+            </form>
             <div class="blanks-items">
                 <h2>Получатель</h2>
                 <label for="">
@@ -179,6 +183,7 @@
                     <input type="date">
                 </label>
             </div>
+    </div>
     </div>
 </body>
 </html>

@@ -11,6 +11,7 @@
     <?php
         require_once 'header.php';
     ?>
+    <div class="other-body">
     <div class="address-book">
         <div class="search-items">
                 <input placeholder="Поиск" type="text">
@@ -27,7 +28,7 @@
                 <th>Удалить</th>   
             </tr>
             <tr>
-                <td><a href="./viewing-an-order.php">ОП-2024-04-27-3369</a></td>
+                <td>ОП-2024-04-27-3369</td>
                 <td>2024-04-27</td>
                 <td>09:22:51</td>
                 <td>ФортеИнвест АО</td>
@@ -36,7 +37,7 @@
                 <td><a href=""><img class="table-icon" src="./icons/trash-alt.svg"></img></a></td>
             </tr>
             <tr>
-                <td><a href="./viewing-an-order.php">ОП-2024-04-27-3369</a></td>
+                <td>ОП-2024-04-27-3369</td>
                 <td>2024-04-27</td>
                 <td>09:22:51</td>
                 <td>ФортеИнвест АО</td>
@@ -45,7 +46,7 @@
                 <td><a href=""><img class="table-icon" src="./icons/trash-alt.svg"></img></a></td>
             </tr>
             <tr>
-                <td><a href="./viewing-an-order.php">ОП-2024-04-27-3369</a></td>
+                <td>ОП-2024-04-27-3369</td>
                 <td>2024-04-27</td>
                 <td>09:22:51</td>
                 <td>ФортеИнвест АО</td>
@@ -54,6 +55,7 @@
                 <td><a href=""><img class="table-icon" src="./icons/trash-alt.svg"></img></a></td>
             </tr>
         </table>
+    </div>
     </div>
     <script src="./JS/main.js"></script>
 </body>

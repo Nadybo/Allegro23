@@ -11,63 +11,68 @@
     <?php
         require_once 'header.php';
     ?>
-    <div class="orders-conyainer">
-        <div class="sort-container">
-            <div class="sort-items">
-                <label for="">
-                    <p>От</p>
-                    <input type="date">
-                </label>
-                <label for="">
-                    <p>До</p>
-                    <input type="date">
-                </label>
-                <button class="sort-button">Фильтр <img src="./icons/sort.svg" style=" width: 16px; aspect-ratio: 1; margin-left: 5px;" alt=""></button>
+    <div class="other-body">
+        <div class="orders-conyainer">
+            <div class="sort-container">
+                <div class="sort-items">
+                    <label for="">
+                        <p>От</p>
+                        <input type="date">
+                    </label>
+                    <label for="">
+                        <p>До</p>
+                        <input type="date">
+                    </label>
+                    <button class="sort-button">Фильтр <img src="./icons/sort.svg" style=" width: 16px; aspect-ratio: 1; margin-left: 5px;" alt=""></button>
+                </div>
+                <div class="search-items">
+                    <input placeholder="Поиск" type="text">
+                    <!-- <button><img src="./icons/search.svg" style=" width: 16px; aspect-ratio: 1;"  alt=""></button> -->
+                </div>
             </div>
-            <div class="search-items">
-                <input placeholder="Поиск" type="text">
-                <!-- <button><img src="./icons/search.svg" style=" width: 16px; aspect-ratio: 1;"  alt=""></button> -->
-            </div>
+            <table>
+                <tr>
+                    <th>Номер заказа</th>
+                    <th>Дата заказа</th>
+                    <th>Время заказа</th>
+                    <th>Отправитель</th>
+                    <th>Получатель</th>
+                    <th>Тариф</th>
+                    <th>Статус</th>
+                    <th>Изменить</th>   
+                </tr>
+                <tr>
+                    <td><a href="./viewing-an-order.php">ОП-2024-04-27-3369</a></td>
+                    <td>2024-04-27</td>
+                    <td>09:22:51</td>
+                    <td>ФортеИнвест АО</td>
+                    <td>ФортеИнвест АО</td>
+                    <td></td>
+                    <td>Рабочий</td>
+                    <td><button>Изменить</button></td>
+                </tr>
+                <tr>
+                    <td><a href="#">ОП-2024-04-27-3369</a></td>
+                    <td>2024-04-27</td>
+                    <td>09:22:51</td>
+                    <td>ФортеИнвест АО</td>
+                    <td>ФортеИнвест АО</td>
+                    <td></td>
+                    <td>Рабочий</td>
+                    <td><button>Изменить</button></td>
+                </tr>
+                <tr>
+                    <td><a href="#">ОП-2024-04-27-3369</a></td>
+                    <td>2024-04-27</td>
+                    <td>09:22:51</td>
+                    <td>ФортеИнвест АО</td>
+                    <td>ФортеИнвест АО</td>
+                    <td></td>
+                    <td>Рабочий</td>
+                    <td><button alt="button">Изменить</button></td>
+                </tr>
+            </table>
         </div>
-        <table>
-            <tr>
-                <th>Номер заказа</th>
-                <th>Дата заказа</th>
-                <th>Время заказа</th>
-                <th>Отправитель</th>
-                <th>Получатель</th>
-                <th>Проезд</th>
-                <th>Тариф</th>   
-            </tr>
-            <tr>
-                <td><a href="./viewing-an-order.php">ОП-2024-04-27-3369</a></td>
-                <td>2024-04-27</td>
-                <td>09:22:51</td>
-                <td>ФортеИнвест АО</td>
-                <td>ФортеИнвест АО</td>
-                <td></td>
-                <td>Рабочий</td>
-            </tr>
-            <tr>
-                <td><a href="#">ОП-2024-04-27-3369</a></td>
-                <td>2024-04-27</td>
-                <td>09:22:51</td>
-                <td>ФортеИнвест АО</td>
-                <td>ФортеИнвест АО</td>
-                <td></td>
-                <td>Рабочий</td>
-            </tr>
-            <tr>
-                <td><a href="#">ОП-2024-04-27-3369</a></td>
-                <td>2024-04-27</td>
-                <td>09:22:51</td>
-                <td>ФортеИнвест АО</td>
-                <td>ФортеИнвест АО</td>
-                <td></td>
-                <td>Рабочий</td>
-            </tr>
-        </table>
-        
     </div>
     <script src="./JS/main.js"></script>
 </body>
