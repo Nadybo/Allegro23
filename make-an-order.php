@@ -117,7 +117,7 @@
                 </div>
             </div>
             <div class="data-items">
-                <h3>Отправитель</h3>
+                <h3>Получатель</h3>
                 <label  for="">
                     <div class="input-with-button">
                     <input class="data-area" placeholder="Организация" type="text">
