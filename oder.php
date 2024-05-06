@@ -49,7 +49,8 @@
                     <td>ФортеИнвест АО</td>
                     <td></td>
                     <td>Рабочий</td>
-                    <td><button>Изменить</button></td>
+                    <td><input class="button-change" type="submit" value="Изменить"></td>
+                    
                 </tr>
                 <tr>
                     <td><a href="#">ОП-2024-04-27-3369</a></td>
@@ -59,7 +60,7 @@
                     <td>ФортеИнвест АО</td>
                     <td></td>
                     <td>Рабочий</td>
-                    <td><button>Изменить</button></td>
+                    <td><input class="button-change" type="submit" value="Изменить"></td>
                 </tr>
                 <tr>
                     <td><a href="#">ОП-2024-04-27-3369</a></td>
@@ -69,7 +70,7 @@
                     <td>ФортеИнвест АО</td>
                     <td></td>
                     <td>Рабочий</td>
-                    <td><button alt="button">Изменить</button></td>
+                    <td><input class="button-change" type="submit" value="Изменить"></td>
                 </tr>
             </table>
         </div>

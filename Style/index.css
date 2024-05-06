@@ -320,7 +320,7 @@ header {
     }
 }
 
-/* order*/
+/*order*/
 .orders-conyainer{
     width: 100%;
     height: fit-content;
@@ -363,6 +363,17 @@ header {
 
     &:hover{
         background-color: var(--button-bl-hover);
+    }
+}
+.button-change{
+    background-color: var(--accent-color);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: var(--border-normal-radius);
+
+    &:hover{
+        background-color: var(--button-hover);
     }
 }
 

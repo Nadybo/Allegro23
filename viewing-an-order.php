@@ -45,7 +45,7 @@
             </label>
         </div>
         <div class="blanks-container">
-            <form class="blanks-items">
+            <div class="blanks-items">
                 <h2>Отправитель</h2>
                 <label for="">
                     <p>Организация</p>
@@ -67,8 +67,8 @@
                     <p>Задание курьеру</p>
                     <textarea name="Сообщения" id="" cols="30" rows="10"></textarea>
                 </label>
-            </form>
-            <form class="blanks-items">
+            </div>
+            <div class="blanks-items">
                 <h2>Информация о вручении</h2>
                 <label for="">
                     <p>ФИО отправителя</p>
@@ -90,8 +90,8 @@
                     <p>Дата и время</p>
                     <input type="date">
                 </label>
-            </form>
-            <form class="blanks-items">
+            </div>
+            <div class="blanks-items">
                 <h2>Отправитель-получатель</h2>
                 <label for="">
                     <p>Организация</p>
@@ -113,8 +113,8 @@
                     <p>Задание курьеру</p>
                     <textarea name="Сообщения" id="" cols="30" rows="10"></textarea>
                 </label>
-            </form>
-            <form class="blanks-items">
+            </div>
+            <div class="blanks-items">
                 <h2>Информация о вручении</h2>
                 <label for="">
                     <p>ФИО отправителя</p>
@@ -136,7 +136,7 @@
                     <p>Дата и время</p>
                     <input type="date">
                 </label>
-            </form>
+            </div>
             <div class="blanks-items">
                 <h2>Получатель</h2>
                 <label for="">
