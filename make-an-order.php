@@ -162,8 +162,6 @@
                 <th>Проезд</th>
                 <th>Телефон</th>
                 <th>ФИО контакта</th>
-                <th>Изменить</th>
-                <th>Удалить</th>   
             </tr>
             <tr>
                 <td>ОП-2024-04-27-3369</td>
@@ -171,8 +169,6 @@
                 <td>09:22:51</td>
                 <td>ФортеИнвест АО</td>
                 <td>ФортеИнвест АО</td>
-                <td><a href=""><img class="table-icon" src="./icons/pencil-edit.svg"></img></a></td>
-                <td><a href=""><img class="table-icon" src="./icons/trash-alt.svg"></img></a></td>
             </tr>
             <tr>
                 <td>ОП-2024-04-27-3369</td>
@@ -180,8 +176,6 @@
                 <td>09:22:51</td>
                 <td>ФортеИнвест АО</td>
                 <td>ФортеИнвест АО</td>
-                <td><a href=""><img class="table-icon" src="./icons/pencil-edit.svg"></img></a></td>
-                <td><a href=""><img class="table-icon" src="./icons/trash-alt.svg"></img></a></td>
             </tr>
             <tr>
                 <td>ОП-2024-04-27-3369</td>
@@ -189,8 +183,6 @@
                 <td>09:22:51</td>
                 <td>ФортеИнвест АО</td>
                 <td>ФортеИнвест АО</td>
-                <td><a href=""><img class="table-icon" src="./icons/pencil-edit.svg"></img></a></td>
-                <td><a href=""><img class="table-icon" src="./icons/trash-alt.svg"></img></a></td>
             </tr>
             <tr>
                 <td>ОП-2024-04-27-3369</td>
@@ -198,8 +190,6 @@
                 <td>09:22:51</td>
                 <td>ФортеИнвест АО</td>
                 <td>ФортеИнвест АО</td>
-                <td><a href=""><img class="table-icon" src="./icons/pencil-edit.svg"></img></a></td>
-                <td><a href=""><img class="table-icon" src="./icons/trash-alt.svg"></img></a></td>
             </tr>
             <tr>
                 <td>ОП-2024-04-27-3369</td>
@@ -207,8 +197,6 @@
                 <td>09:22:51</td>
                 <td>ФортеИнвест АО</td>
                 <td>ФортеИнвест АО</td>
-                <td><a href=""><img class="table-icon" src="./icons/pencil-edit.svg"></img></a></td>
-                <td><a href=""><img class="table-icon" src="./icons/trash-alt.svg"></img></a></td>
             </tr>
             <tr>
                 <td>ОП-2024-04-27-3369</td>
@@ -216,8 +204,6 @@
                 <td>09:22:51</td>
                 <td>ФортеИнвест АО</td>
                 <td>ФортеИнвест АО</td>
-                <td><a href=""><img class="table-icon" src="./icons/pencil-edit.svg"></img></a></td>
-                <td><a href=""><img class="table-icon" src="./icons/trash-alt.svg"></img></a></td>
             </tr>
             <tr>
                 <td>ОП-2024-04-27-3369</td>
@@ -225,8 +211,6 @@
                 <td>09:22:51</td>
                 <td>ФортеИнвест АО</td>
                 <td>ФортеИнвест АО</td>
-                <td><a href=""><img class="table-icon" src="./icons/pencil-edit.svg"></img></a></td>
-                <td><a href=""><img class="table-icon" src="./icons/trash-alt.svg"></img></a></td>
             </tr>
             <tr>
                 <td>ОП-2024-04-27-3369</td>
@@ -234,8 +218,6 @@
                 <td>09:22:51</td>
                 <td>ФортеИнвест АО</td>
                 <td>ФортеИнвест АО</td>
-                <td><a href=""><img class="table-icon" src="./icons/pencil-edit.svg"></img></a></td>
-                <td><a href=""><img class="table-icon" src="./icons/trash-alt.svg"></img></a></td>
             </tr>
             <tr>
                 <td>ОП-2024-04-27-3369</td>
@@ -243,8 +225,6 @@
                 <td>09:22:51</td>
                 <td>ФортеИнвест АО</td>
                 <td>ФортеИнвест АО</td>
-                <td><a href=""><img class="table-icon" src="./icons/pencil-edit.svg"></img></a></td>
-                <td><a href=""><img class="table-icon" src="./icons/trash-alt.svg"></img></a></td>
             </tr>
         </table>
     </div>
