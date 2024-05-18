@@ -28,7 +28,7 @@
         </nav>
         <div class="buttons-container">
         <a class="order-button" href="./make-an-order.php">Сделать заказ <img class="mini-icon" src="./icons/box.svg" alt="icon box"></a>
-        <a class="personal-account" href="./authorization.php">Личный кабинет <img class="mini-icon" src="./icons/user.svg" alt="icon user"></a>
+        <a class="personal-account" href="./profile.php">Личный кабинет <img class="mini-icon" src="./icons/user.svg" alt="icon user"></a>
         </div>
         <div class="icon-buttons-order">
         <a class="order-button" href="./make-an-order.php"><img class="mini-icon" src="./icons/box.svg" alt="icon box"></a>

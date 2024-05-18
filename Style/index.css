@@ -27,7 +27,7 @@ html { font-family: 'Inter', sans-serif; }
 }
 @media (min-width: 300px) and (max-width: 1500px) {
 .other-body{
-    margin: 25px 30px 0 30px;
+    margin: 25px 20px 0 20px;
 }
 }
 
@@ -444,17 +444,18 @@ tr:nth-child(odd) {
 }
 @media (min-width: 300px) and (max-width: 1150px) {
     table{
-        margin-top: 25px;
+        /* margin-top: 25px;
         text-align: center;
     
-        font-size: 12px;
+        font-size: 12px; */
+        display: none;
     }
-    table th{
+    /* table th{
         padding: 9px 0 9px 0;
     }
     table td{
         padding: 13px 0 13px 0;
-    }
+    } */
 }
 
 /*viewing an order*/
@@ -1259,4 +1260,77 @@ fieldset label{
 
 #modal2{
     margin-bottom: 20px;
+}
+
+
+/* Profile */
+.profile-container{
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+
+}
+.user-items{
+    display: flex;
+    flex-direction: row;
+
+    height: 460px;
+    background-color: var(--white-bg);
+
+    justify-content: space-between;
+    
+
+}
+.edit-data{
+    width: 1172px;
+    box-shadow: 0 0 10px 0 #3030308e;
+    border-radius: var(--border-normal-radius);
+}
+.user-data{
+    width: 383px;
+    box-shadow: 0 0 10px 0 #3030308e;
+    border-radius: var(--border-normal-radius);
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+.history-table{
+    box-shadow: 0 0 10px 0 #3030308e;
+
+    max-height: 400px;
+    width: 100%;
+    overflow: scroll;
+    margin: 50px 0 40px 0;
+
+    border-radius: var(--border-normal-radius);
+}
+
+.history-table table{
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+
+}
+
+.user-photo-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.user-photo{
+    height: 80px;
+    aspect-ratio: 1;
+
+    border-radius: 50%;
+}
+
+.user-data-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
 }
