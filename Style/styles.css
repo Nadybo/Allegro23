@@ -1447,9 +1447,10 @@ display: none;
 .history-table{
     box-shadow: 0 0 10px 0 #3030308e;
 
-    max-height: 400px;
+    height: 400px;
     width: 100%;
     overflow: scroll;
+    overflow-x: hidden;
     margin: 50px 0 40px 0;
 
     border-radius: var(--border-normal-radius);
@@ -1458,7 +1459,7 @@ display: none;
 .history-table table{
     width: 100%;
     margin: 0;
-    overflow-x: hidden;
+    
 
 }
 
