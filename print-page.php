@@ -216,6 +216,7 @@
     body{
         width: 820px;
         height: fit-content;
+
     }
     .data-time input{
         width:180px;

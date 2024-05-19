@@ -3,14 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./Style/index.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="./Style/styles.css" media="screen" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
-    <title>Home</title>
+    <title>Главная</title>
 </head>
 <body>
-    <?php
-        require_once 'header.php';
-    ?>
+    <?php require_once $_SERVER['DOCUMENT_ROOT'] . '\header.php' ?>
     <div class="other-body">
         <div class="container-title">
             <div class="content-title">
@@ -94,16 +92,16 @@
             </div>
             <div class="feedback-items">
                 <form class="feedback-form" action="">
-                    <input placeholder="Ваше имя" type="text">
-                    <input placeholder="Компания" type="text">
-                    <input placeholder="Email" type="email">
+                    <input placeholder="Ваше имя" type="text" required>
+                    <input placeholder="Компания" type="text" required>
+                    <input placeholder="Email" type="email" required>
                     <textarea name="" id="">
                     </textarea>
                     <div class="checkbox-container">
                     <input class="form-checkbox" type="checkbox">
                     <p>Я соглашаюсь с политикой <a href="#">конфиденциальности</a></p>
                     </div>
-                    <button class="submit-application">Оставить заявку</button>
+                    <button type="submit" class="submit-application">Оставить заявку</button>
                 </form>
             </div> 
         </div>
@@ -112,16 +110,16 @@
         <div class="modal-cntainer">
             <span id="modal2" class="close">&times;</span>
             <form class="feedback-form" action="">
-                <input placeholder="Ваше имя" type="text">
-                <input placeholder="Компания" type="text">
-                <input placeholder="Email" type="email">
+                <input placeholder="Ваше имя" type="text" required>
+                <input placeholder="Компания" type="text" required>
+                <input placeholder="Email" type="email" required>
                 <textarea name="" id="">
                 </textarea>
                 <div class="checkbox-container">
                 <input class="form-checkbox" type="checkbox">
                 <p>Я соглашаюсь с политикой <a href="#">конфиденциальности</a></p>
                 </div>
-                <button class="submit-application">Оставить заявку</button>
+                <button type="submit" class="submit-application">Оставить заявку</button>
             </form>
         </div>
     </div>
@@ -159,6 +157,6 @@
             }
         }
     </script>
-    <!-- <script src="./JS/main.js"></script> -->
+    <!-- <script src="./JS/script.js"></script> -->
 </body>
 </html>

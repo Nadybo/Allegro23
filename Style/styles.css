@@ -367,7 +367,9 @@ header {
 }
 .button-change{
     background-color: var(--accent-color);
+    text-decoration: none;
     color: white;
+    width: 50%;
     padding: 10px;
     border: none;
     border-radius: var(--border-normal-radius);
@@ -444,18 +446,17 @@ tr:nth-child(odd) {
 }
 @media (min-width: 300px) and (max-width: 1150px) {
     table{
-        /* margin-top: 25px;
+        margin-top: 25px;
         text-align: center;
     
-        font-size: 12px; */
-        display: none;
+        font-size: 12px;
     }
-    /* table th{
+    table th{
         padding: 9px 0 9px 0;
     }
     table td{
         padding: 13px 0 13px 0;
-    } */
+    }
 }
 
 /*viewing an order*/
@@ -482,6 +483,11 @@ tr:nth-child(odd) {
     &:hover{
         background-color: var(--button-bl-hover);
     }
+}
+.order-id{
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-normal-radius);
+    padding: 13px;
 }
 .number-order{
     display: flex;
@@ -510,7 +516,11 @@ tr:nth-child(odd) {
     }
 }
 .save-button{
+    width: 80px;
+    height: 45px;
+    border: none;
     background-color: var(--accent-color);
+    border-radius: var(--border-normal-radius);
     color: var(--white-bg);
 
     &:hover{
@@ -521,6 +531,11 @@ tr:nth-child(odd) {
 .blanks-container{
     display: flex;
     flex-wrap: wrap;
+}
+.hidden{
+    display: none;
+    justify-content: space-between;
+    width: 100%;
 }
 .blanks-items{
     margin-top: 40px;
@@ -648,9 +663,13 @@ fieldset label{
 
 .rate-check:checked + .rate-items {
     /* background-color: var(--accent-color);
-    color: var(--white-bg);
-    border: none; */
-    border-color: var(--accent-color)
+    color: var(--white-bg); */
+    border-color: var(--accent-color);
+    box-shadow: 0 0 15px 0 var(--accent-color);
+
+    h4{
+        color: var(--accent-color);
+    }
 }
 .rate-check {
     display: none;
@@ -668,7 +687,9 @@ fieldset label{
     transition: border-color 0.3s; 
 }
 .weight-check:checked + .weight-items {
-    border-color: var(--accent-color)
+    border-color: var(--accent-color);
+    box-shadow: 0 0 10px 0 var(--accent-color);
+    color: var(--accent-color);
 }
 .weight-check{
     display: none;
@@ -706,6 +727,9 @@ fieldset label{
     border: 1px solid var(--border-color);
 }
 
+#hidden-items{
+display: none;
+}
 .input-with-button {
     width: 100%;
 
@@ -776,6 +800,62 @@ fieldset label{
 .table-icon{
     width: 25px;
     aspect-ratio: 1;
+}
+#address-edit-btn, #address-delete-btn{
+    background-color: transparent;
+    padding: 10px;
+    border: none;
+}
+.modal-edit-address {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+    overflow: hidden;
+}
+.edit-items {
+    padding: 30px;
+    width: 30%;
+    background-color: #fefefe;
+
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: var(--border-normal-radius);
+
+    display: flex;
+    flex-direction: column;
+
+}
+.address-data{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 20px;
+}
+.address-data input{
+    width: 100%;
+    height: 50px;
+
+    font-size: var(--font-normal-size);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-normal-radius);
+    padding: 10px;
+}
+.address-data button{
+    height: 50px;
+    background-color: var(--accent-color);
+    border: none;
+    border-radius: var(--border-normal-radius);
+    font-size: var(--font-normal-size);
+    color: var(--white-bg);
+    &:hover{
+        background-color: var(--button-hover);
+    }
 }
 
 /*Modal window*/
@@ -1269,35 +1349,100 @@ fieldset label{
     flex-direction: column;
 
     width: 100%;
+    height: fit-content;
 
 }
 .user-items{
     display: flex;
     flex-direction: row;
 
-    height: 460px;
+    height: fit-content;
     background-color: var(--white-bg);
 
     justify-content: space-between;
     
 
 }
-.edit-data{
-    width: 1172px;
+@media (min-width: 300px) and (max-width: 700px) {
+    .user-items{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+.edit-data {
+    max-width: 1172px;
+    background-color: var(--white-bg);
     box-shadow: 0 0 10px 0 #3030308e;
+    margin-left: 50px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    border-radius: var(--border-normal-radius); 
+
+    padding: 30px;
+}
+.edit-data .change-user-data {
+    flex: 1 1 45%; 
+    min-width: 150px;
+    font-size: var(--font-normal-size);
+    height: 65px;
+    padding: 10px; 
+
+    border: 1px solid var(--border-color);
     border-radius: var(--border-normal-radius);
+
+
+}
+
+.edit-data button {
+    flex: 1 1 45%; 
+    height: 65px;
+
+    border-radius: var(--border-normal-radius);
+    border: none;
+    background-color: var(--accent-color);
+    color: var(--white-bg);
+    font-size: var(--font-normal-size);
+
+    &:hover{
+        background-color: var(--button-hover);
+    }
 }
 .user-data{
-    width: 383px;
+    width: 33%;
     box-shadow: 0 0 10px 0 #3030308e;
     border-radius: var(--border-normal-radius);
 
     display: flex;
     flex-direction: column;
 
-    align-items: center;
     justify-content: space-between;
-    padding: 30px;
+    padding: 50px 30px 50px 30px;
+}
+@media (min-width: 1350px) and (max-width: 1700px) {
+    
+    .user-data{
+        width: 50%;
+    }
+    
+}
+@media (min-width: 700px) and (max-width: 1350px) {
+    
+    .user-data{
+        width: 70%;
+    }
+    
+}
+@media (min-width: 300px) and (max-width: 700px) {
+    .edit-data {
+        margin: 50px 0 0 0;
+    }
+    .user-data{
+        width: 100%;
+    }
+    
 }
 .history-table{
     box-shadow: 0 0 10px 0 #3030308e;
@@ -1319,6 +1464,7 @@ fieldset label{
 
 .user-photo-container{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -1333,4 +1479,13 @@ fieldset label{
     display: flex;
     flex-direction: column;
     justify-content: start;
+    margin-top: 20px;
+}
+.user-data-container ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.user-data-container ul p{
+    font-weight: bold;
 }

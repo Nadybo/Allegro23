@@ -3,14 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./Style/index.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="./Style/styles.css" media="screen" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
-    <title>Alegro23</title>
+    <title>Сделать заказ</title>
 </head>
 <body>
-    <?php
-        require_once 'header.php';
-    ?>
+    <?php require_once $_SERVER['DOCUMENT_ROOT'] . '\header.php' ?>
     <div class="other-body">
     <div class="make-order-container">
         <div class="title-container">
@@ -19,50 +17,52 @@
         </div>
         <div class="rate-container">
             <h3>Тариф</h3>
-            <fieldset> 
-                <label for="1">
-                    <input class="rate-check" type="radio" id="1" name="drone" value="Быстрый" />
+            <form action="">
+                <fieldset> 
+                    <label for="1">
+                        <input class="rate-check" type="radio" id="1" name="drone" value="Быстрый" checked/>  
+                            <div class="rate-items">
+                            <h4>Быстрый</h4>
+                            <p>Заказ заберёт и доставит ближайший свободный курьер</p>
+                            </div>
+                    </label>
+    
+                    <label  for="2">
+                        <input class="rate-check" type="radio"  id="2" name="drone" value="Рабочий"/>
+                            <div class="rate-items">
+                            <h4>Рабочий</h4>
+                            <p>Заказ заберёт и доставит ближайший свободный курьер</p>
+                            </div>
+                        </label>
+                    <label  for="3">
+                        <input class="rate-check" type="radio" id="3" name="drone" value="На следующий день"/>
                         <div class="rate-items">
-                        <h4>Быстрый</4>
-                        <p>Заказ заберёт и доставит ближайший свободный курьер</p>
-                        </div>   
-                </label>
-  
-                <label  for="2">
-                    <input class="rate-check" type="radio"  id="2" name="drone" value="Рабочий"/>
+                            <h4>На следующий день</h4>
+                            <p>Заказ заберёт и доставит ближайший свободный курьер</p></div>
+                    </label>
+                
+                    <label for="4">
+                        <input class="rate-check" type="radio" id="4" name="drone" value="За час!"/>
                         <div class="rate-items">
-                        <h4>Рабочий</h4>
-                        <p>Заказ заберёт и доставит ближайший свободный курьер</p>
+                            <h4>За час!</h4>
+                            <p>Заказ заберёт и доставит ближайший свободный курьер</p></div>
+                    </label>
+                
+                    <label for="5">
+                        <input class="rate-check" type="radio" id="5" name="drone" value="Индивидуальный"/>
+                        <div class="rate-items">
+                            <h4>Индивидуальный</h4>
+                            <p>Заказ заберёт и доставит ближайший свободный курьер</p>
                         </div>
                     </label>
-                <label  for="3">
-                    <input class="rate-check" type="radio" id="3" name="drone" value="На следующий день"/>
-                    <div class="rate-items">
-                        <h4>На следующий день</h4>
-                        <p>Заказ заберёт и доставит ближайший свободный курьер</p></div>
-                </label>
-               
-                <label for="4">
-                    <input class="rate-check" type="radio" id="4" name="drone" value="За час!"/>
-                    <div class="rate-items">
-                        <h4>За час!</h4>
-                        <p>Заказ заберёт и доставит ближайший свободный курьер</p></div>
-                </label>
-               
-                <label for="5">
-                    <input class="rate-check" type="radio" id="5" name="drone" value="Индивидуальный"/>
-                    <div class="rate-items">
-                        <h4>Индивидуальный</h4>
-                        <p>Заказ заберёт и доставит ближайший свободный курьер</p>
-                    </div>
-                </label>
-            </fieldset>
+                </fieldset>
+            </form>
         </div>
         <div class="order-weight">
         <h3>Вес заказа</h3>
             <fieldset> 
                 <label for="weight1">
-                    <input class="weight-check" type="radio" id="weight1" name="weight" value="До 1 кг" />
+                    <input class="weight-check" type="radio" id="weight1" name="weight" value="До 1 кг" checked />
                         <div class="weight-items">
                         <p>До 1 кг</p>
                         </div>   
@@ -116,6 +116,34 @@
                 <p>Сохранить в адресную книгу</p>
                 </div>
             </div>
+            <div id="hidden-items">
+            <div class="data-items">
+                <h3>Получатель-Отправитель</h3>
+                <label  for="">
+                    <div class="input-with-button">
+                    <input class="data-area" placeholder="Организация" type="text">
+                    <a id="openModalBtn2">Адресная книга</a>
+                </div>
+                </label>
+                <label for="">
+                    <input class="data-area" placeholder="Адрес" type="text">
+                </label>
+                <label for="">
+                    <input class="data-area" placeholder="ФИО" type="text">
+                </label>
+                <label for="">
+                    <input class="data-area" placeholder="Телефон" type="tel">
+                </label>
+                <label for="">
+                    <textarea name="" id="" cols="30" rows="10">
+                    </textarea>
+                </label>
+                <div class="checkbox-save">
+                <input class="save-address-book" type="checkbox">
+                <p>Сохранить в адресную книгу</p>
+                </div>
+            </div>
+            </div>
             <div class="data-items">
                 <h3>Получатель</h3>
                 <label  for="">
@@ -141,7 +169,7 @@
                 <input class="save-address-book" type="checkbox">
                 <p>Сохранить в адресную книгу</p>
                 </div>
-                <button>Сделать заказ</button>
+                <button type="submit">Сделать заказ</button>
             </div>
         </div>
     </div>
@@ -231,6 +259,6 @@
   </div>
 </div>
     </div>
-    <script src="./JS/main.js"></script>
+    <script src="./JS/script.js"></script>
 </body>
 </html>

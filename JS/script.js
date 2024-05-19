@@ -23,9 +23,11 @@ document.querySelectorAll('.navbar-items').forEach(link => {
       document.removeEventListener('click', closeMenuOutside);
     }
 }
+
 var modal = document.getElementById("myModal");
 var btn = document.getElementById("openModalBtn");
 var btn1 = document.getElementById("openModalBtn1");
+var btn2 = document.getElementById("openModalBtn2");
 var span = document.getElementsByClassName("close")[0];
 
 function openModal() {
@@ -54,4 +56,23 @@ btn1.onclick = function() {
     openModal();
 }
 
+btn2.onclick = function() {
+    openModal();
+}
+
+//Для добавления поле Получатель-Отправитель ,
+document.addEventListener('DOMContentLoaded', function() {
+  const radioButtons = document.querySelectorAll('input[name="drone"]');
+  const hiddenElement = document.getElementById('hidden-items');
+
+  radioButtons.forEach(radio => {
+    radio.addEventListener('change', function() {
+      if (this.value === 'Индивидуальный') {
+        hiddenElement.style.display = 'block';
+      } else {
+        hiddenElement.style.display = 'none';
+      }
+    });
+  });
+});
 
