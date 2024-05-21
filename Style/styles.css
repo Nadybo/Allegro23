@@ -1490,3 +1490,15 @@ display: none;
 .user-data-container ul p{
     font-weight: bold;
 }
+.log-out-btn{
+    background-color: var(--accent-color);
+    padding: 10px;
+    border: none;
+    border-radius: var(--border-normal-radius);
+    font-size: var(--font-normal-size);
+    color: var(--white-bg);
+    &:hover{
+        background-color: var(--button-hover);
+        cursor: pointer;
+    }
+}

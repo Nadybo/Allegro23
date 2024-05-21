@@ -24,6 +24,7 @@
                             <p>Телефон:</p>
                             <p>Логин:</p>
                             <p>Статус:</p>
+                            <button class="log-out-btn">выйти из аккоунта</button>
                         </ul>
                     </div>
 
