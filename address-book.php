@@ -38,7 +38,10 @@
     </div>
     <div id="myModal" class="modal-edit-address">
   <div class="edit-items">
-    <span class="close">&times;</span>
+    <div class="close-btn-title">
+        <p>Редактор адресная книг</p>
+        <span class="close">&times;</span>
+    </div>
     <div class="address-data">
         <input placeholder="Компания" type="text">
         <input placeholder="Адрес" type="text">

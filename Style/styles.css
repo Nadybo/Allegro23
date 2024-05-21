@@ -1502,3 +1502,8 @@ display: none;
         cursor: pointer;
     }
 }
+.close-btn-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
