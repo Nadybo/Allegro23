@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./Style/styles.css" media="screen" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
     <title>Адресная книга</title>
 </head>
@@ -12,9 +13,10 @@
     <div class="other-body">
     <div class="address-book">
         <div class="search-items">
-            <input placeholder="Поиск" type="text">
+            <input id="search-field-address-book" onkeyup="tableSearchAddressBook()" placeholder="Поиск" type="text">
+            <button class="rest-data-search" onclick="resetSearchAddressBook()" value="Clear" title="clear text in search area"><i class="fa-solid fa-arrows-rotate"></i></button>
         </div>
-        <table>
+        <table id="address-book-table">
             <tr>
                 <th>Компания</th>
                 <th>Адрес</th>

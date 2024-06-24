@@ -413,7 +413,7 @@ header {
         width: 300px;
     }
 }
-.search-items button{
+/* .search-items button{
     width: 50px;
     aspect-ratio: 1;
 
@@ -427,7 +427,7 @@ header {
         background-color: var(--button-hover);
     }
     
-}
+} */
 @media (min-width: 300px) and (max-width: 1036px) {
     .sort-container{
         flex-direction: column;

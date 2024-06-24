@@ -96,6 +96,25 @@ function tableSearch() {
 
   }
 }
+function tableSearchAddressBook() {
+  var phrase = document.getElementById('search-field-address-book');
+  var table = document.getElementById('address-book-table');
+  var regPhrase = new RegExp(phrase.value, 'i');
+  var flag = false;
+  for (var i = 1; i < table.rows.length; i++) {
+      flag = false;
+      for (var j = table.rows[i].cells.length - 1; j >= 0; j--) {
+          flag = regPhrase.test(table.rows[i].cells[j].innerHTML);
+          if (flag) break;
+      }
+      if (flag) {
+          table.rows[i].style.display = "";
+      } else {
+          table.rows[i].style.display = "none";
+      }
+
+  }
+}
 
 function dateRangeSearch() {
   var startDate = document.getElementById('start-date').value;
@@ -131,4 +150,13 @@ function resetSearch() {
   for (var i = 1; i < table.rows.length; i++) {
       table.rows[i].style.display = "";
   }
+}
+
+function resetSearchAddressBook() {
+  document.getElementById('search-field-address-book').value ='';
+  var addressBookTable = document.getElementById('address-book-table');
+  
+  for (var i = 1; i < addressBookTable.rows.length; i++) {
+    addressBookTable.rows[i].style.display = "";
+}
 }
