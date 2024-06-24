@@ -237,7 +237,7 @@
     }
     textarea{
         width: 400px;
-        height: 80px;
+        height: 50px;
     }
     .form-container{
         padding: 5px;
@@ -250,7 +250,7 @@
         font-weight: bold;
     }
     h3{
-        margin-top: 10px;
+        margin-top: 5px;
     }
     .agreement{
         margin-top: 10px;

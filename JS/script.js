@@ -76,3 +76,59 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+
+function tableSearch() {
+  var phrase = document.getElementById('search-order');
+  var table = document.getElementById('orders-table');
+  var regPhrase = new RegExp(phrase.value, 'i');
+  var flag = false;
+  for (var i = 1; i < table.rows.length; i++) {
+      flag = false;
+      for (var j = table.rows[i].cells.length - 1; j >= 0; j--) {
+          flag = regPhrase.test(table.rows[i].cells[j].innerHTML);
+          if (flag) break;
+      }
+      if (flag) {
+          table.rows[i].style.display = "";
+      } else {
+          table.rows[i].style.display = "none";
+      }
+
+  }
+}
+
+function dateRangeSearch() {
+  var startDate = document.getElementById('start-date').value;
+  var endDate = document.getElementById('end-date').value;
+  var table = document.getElementById('orders-table');
+
+  var start = new Date(startDate);
+  var end = new Date(endDate);
+
+  if (start > end) {
+      alert("Start date must be before end date");
+      return;
+  }
+
+  for (var i = 1; i < table.rows.length; i++) {
+      var row = table.rows[i];
+      var dateCell = row.cells[1].innerHTML;
+      var rowDate = new Date(dateCell);
+
+      if (rowDate >= start && rowDate <= end) {
+          row.style.display = "";
+      } else {
+          row.style.display = "none";
+      }
+  }
+}
+function resetSearch() {
+  document.getElementById('search-order').value = '';
+  document.getElementById('start-date').value = '';
+  document.getElementById('end-date').value = '';
+  var table = document.getElementById('orders-table');
+
+  for (var i = 1; i < table.rows.length; i++) {
+      table.rows[i].style.display = "";
+  }
+}

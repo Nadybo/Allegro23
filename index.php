@@ -52,33 +52,45 @@
             <h1>Доставка деловой документации пешими курьерами имеет целый ряд преимуществ, которые делают этот способ передачи документов удобным и эффективным:</h1>
             <div class="advantage-blocks">
                 <div class="block">
-                    <p class="block-number">1</p>
-                    <h3>Быстрая доставка</h3>
+                    <div class="block-title-number">
+                        <p class="block-number">1</p>
+                        <h3>Быстрая доставка</h3>
+                    </div>
                     <p class="text-info">Пешим курьерам не нужно преодолевать пробки на дорогах, поэтому они могут оперативно доставить документы в нужное место без значительных задержек.</p>
                 </div>
                 <div class="block">
-                    <p class="block-number">2</p>
-                    <h3>Быстрая доставка</h3>
+                    <div class="block-title-number">
+                        <p class="block-number">2</p>
+                        <h3>Быстрая доставка</h3>
+                    </div>
                     <p class="text-info">Пешим курьерам не нужно преодолевать пробки на дорогах, поэтому они могут оперативно доставить документы в нужное место без значительных задержек.</p>
                 </div>
                 <div class="block">
-                    <p class="block-number">3</p>
-                    <h3>Быстрая доставка</h3>
+                    <div class="block-title-number">
+                        <p class="block-number">3</p>
+                        <h3>Быстрая доставка</h3>
+                    </div>
                     <p class="text-info">Пешим курьерам не нужно преодолевать пробки на дорогах, поэтому они могут оперативно доставить документы в нужное место без значительных задержек.</p>
                 </div>
                 <div class="block">
-                    <p class="block-number">4</p>
-                    <h3>Быстрая доставка</h3>
+                    <div class="block-title-number">
+                        <p class="block-number">4</p>
+                        <h3>Быстрая доставка</h3>
+                    </div>
                     <p class="text-info">Пешим курьерам не нужно преодолевать пробки на дорогах, поэтому они могут оперативно доставить документы в нужное место без значительных задержек.</p>
                 </div>
                 <div class="block">
-                    <p class="block-number">5</p>
-                    <h3>Быстрая доставка</h3>
+                    <div class="block-title-number">
+                        <p class="block-number">5</p>
+                        <h3>Быстрая доставка</h3>
+                    </div>
                     <p class="text-info">Пешим курьерам не нужно преодолевать пробки на дорогах, поэтому они могут оперативно доставить документы в нужное место без значительных задержек.</p>
                 </div>
                 <div class="block">
-                    <p class="block-number">6</p>
-                    <h3>Быстрая доставка</h3>
+                    <div >
+                        <p class="block-number">6</p>
+                        <h3>Быстрая доставка</h3>
+                    </div>
                     <p class="text-info">Пешим курьерам не нужно преодолевать пробки на дорогах, поэтому они могут оперативно доставить документы в нужное место без значительных задержек.</p>
                 </div>
             
@@ -126,37 +138,6 @@
     <?php
         require_once 'footer.php';
     ?>
-    <script>
-        var modal2 = document.getElementById("modal2");
-        var btn2 = document.getElementById("openModalBtn2");
-        var btn3 =document.getElementById("openModalBtn3")
-        var closeBtn2 = document.querySelector("#modal2 .close");
-
-        function openModal2() {
-            modal2.style.display = "block";
-        }
-
-        function closeModal2() {
-            modal2.style.display = "none";
-        }
-
-        btn2.onclick = function() {
-            openModal2();
-        }
-        btn3.onclick = function() {
-            openModal2();
-        }
-
-        closeBtn2.onclick = function() {
-            closeModal2();
-        }
-
-        window.onclick = function(event) {
-            if (event.target == modal2) {
-                closeModal2();
-            }
-        }
-    </script>
-    <!-- <script src="./JS/script.js"></script> -->
+    <script src="/JS/indexPageScript.js"></script>
 </body>
 </html>

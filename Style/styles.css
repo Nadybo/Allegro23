@@ -336,6 +336,17 @@ header {
 .sort-items{
     display: flex;
 }
+.rest-data-search{
+    margin-top: 20px;
+    border: none;
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    &:hover{
+        border: 0.5px solid black;
+        border-radius: var(--border-normal-radius);
+    }
+}
 .sort-items input{
     width: 140px;
     height: 50px;
@@ -423,25 +434,31 @@ header {
     }
 }
 
-table{
+table {
+    width: 100%;
     margin-top: 25px;
     text-align: center;
-
     font-size: var(--font-normal-size);
 }
-table th{
+table th {
     background-color: #EDEDED;
-
+    word-wrap: break-word;
+    white-space: normal;
     padding: 18px 0 18px 0;
+    word-break: break-word;
+    max-width: 150px; /* или любой другой размер */
 }
-table td{
+table td {
+    word-wrap: break-word;
+    white-space: normal;
     padding: 26px 0 26px 0;
+    word-break: break-word;
+    max-width: 150px; /* или любой другой размер */
 }
 tr:nth-child(odd) {
     background-color: #F8F8F8;
-  }
-  
-  tr:nth-child(even) {
+}
+tr:nth-child(even) {
     background-color: white;
 }
 @media (min-width: 300px) and (max-width: 1150px) {
@@ -452,9 +469,11 @@ tr:nth-child(odd) {
         font-size: 12px;
     }
     table th{
+        word-wrap: break-word;
         padding: 9px 0 9px 0;
     }
     table td{
+        word-wrap: break-word;
         padding: 13px 0 13px 0;
     }
 }
@@ -1107,6 +1126,7 @@ display: none;
     display: flex;
     flex-direction: column;
     background-color: var(--white-bg);
+    text-align: left;
 
     box-shadow: 0 0 10px 0 #3030308e;
     border-radius: 20px;
@@ -1116,9 +1136,14 @@ display: none;
     padding: 15px;
     margin-top: 40px;
 }
+.block-title-number{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
 
 .block h3{
-    margin-bottom: 20px;
+    margin: 10px 0 0 10px;
 }
 
 .block-number{
@@ -1134,7 +1159,7 @@ display: none;
 
     align-items: center;
 
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 .text-info{
     margin-bottom: 20px;
@@ -1446,7 +1471,7 @@ display: none;
 }
 .history-table{
     box-shadow: 0 0 10px 0 #3030308e;
-
+    text-wrap:wrap;
     height: 400px;
     width: 100%;
     overflow: scroll;
